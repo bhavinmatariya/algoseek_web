@@ -116,6 +116,10 @@
         .word_swap {
             left: 340px;
 
+            @include xl {
+                left: 260px;
+            }
+
             @include lg {
                 left: 230px;
             }

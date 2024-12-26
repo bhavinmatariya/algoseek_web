@@ -114,6 +114,24 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .onboarding__wrapper {
+        .onboarding_tile{
+            max-width: 194px;
+            min-height: 210px;
+
+            .onboarding_data__wrap {
+                max-width: 100%;
+            }
+        }
+
+        .onboarding_tile--last {
+            max-width: 360px;
+            min-height: 210px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .icons {
         height: 46px;
