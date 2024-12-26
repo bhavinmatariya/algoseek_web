@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './variables';
+// @import './fonts';
+@import './helper';
+@import './common';
+@import './responsive';
+
+html {
+    font-size: 10px;
+
+    @include xxl {
+        font-size: 9px;
+    }
+
+    @include xl {
+        font-size: 8px;
+    }
+
+    @include lg {
+        font-size: 7px;
+    }
+
+    @include md {
+        font-size: 7.5px;
+    }
+
+    @include sm {
+        font-size: 6px;
+    }
+
+    @include xs {
+        font-size: 5.5px;
+    }
+}

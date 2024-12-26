@@ -1,0 +1,47 @@
+<!-- DATA PACKAGES SECTION START -->
+<section class="algoseek_data_packages__wrapper space__sm">
+    <div class="container_wrapper">
+        <div class="algoseek__title margin_bottom text-center">
+            <div class="algoseek_badge bg_light_red d-inline-block rounded-pill">
+                <span class="text_red body_font fw-semibold">New</span>
+            </div>
+            <h2 class="lh_11">{{ packagesData[0]?.title }}</h2>
+            <p class="body_font fw-light text_gray">
+                {{ packagesData[0]?.description }}
+            </p>
+        </div>
+
+        <div>
+            <div class="data_package__wrapper row">
+                <div class="col-12 col-md-5">
+                    <div class="data_package_image_wrap">
+                        <div class="data_package_image position-relative">
+                            <img src="{{baseURL}}/assets/{{packagesData[0]?.image}}" alt="Image" class="algoseek_img_ratio">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="packages">
+                        <ul>
+
+                            @for (item of packagesItems; track $index) {
+                            <li>
+                                <h4>{{ item.name }}</h4>
+                                <p class="body_font fw-light text_gray lh_13">
+                                    {{ item.description }}
+                                </p>
+                            </li>
+                            }
+                           
+                        </ul>
+
+                        <div class="ms-5">
+                            <button class="btn_pill">View Package Options</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- DATA PACKAGES SECTION END -->

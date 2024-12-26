@@ -1,0 +1,88 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/responsive';
+
+.footer_wrapper {
+    gap: 200px;
+
+    @include xl {
+        gap: 50px;
+    }
+
+    &.border_bottom__grayish-blue {
+        border-color: $gray-shade;
+    }
+}
+
+.algoseek_logo__wrapper {
+    max-width: 320px;
+
+    .logo {
+        max-width: 312px;
+        width: 100%;
+        margin-bottom: 48px;
+    }
+}
+
+.news_letter__wrapper {
+    .form-control {
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: $white-color;
+        border-radius: 0;
+
+        &::placeholder {
+            color: $gray-shade;
+        }
+    }
+
+    .send_btn {
+        height: 48px;
+        width: 48px;
+        background-color: $white-color;
+        color: $eerie-black;
+        border-radius: 50%;
+    }
+}
+
+.footer_links_wrapper {
+    flex: 1;
+
+    h5 {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .footer_link {
+        font-weight: 700;
+        color: $gray-shade;
+        margin-bottom: 20px;
+        display: block;
+        font-size: $font-18;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+}
+
+.footer_wrapper__accordion {
+    .accordion-button:not(.collapsed) {
+        box-shadow: none !important;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none !important;
+    }
+
+    .accordion-item {
+        border-color: $gray-shade !important;
+    }
+
+    .accordion-button::after {
+        flex-shrink: 0;
+        margin-left: auto;
+        content: "\25BC";
+        transition: var(--bs-accordion-btn-icon-transition);
+        color: white;
+    }
+}

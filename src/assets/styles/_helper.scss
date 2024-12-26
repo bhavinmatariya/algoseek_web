@@ -1,0 +1,214 @@
+@import './variables';
+@import './fonts';
+@import './responsive';
+
+
+h1,
+.algoseek_heading__h1 {
+    font-size: $font-120;
+    font-weight: bolder;
+    font-family: 'Helvetica Neue';
+
+    @include md {
+        font-size: $font-100;
+    }
+
+    @include sm {
+        letter-spacing: -1.62px;
+        line-height: 1.1;
+    }
+}
+
+h2,
+.algoseek_heading__h2 {
+    font-size: $font-60;
+    font-weight: 600;
+}
+
+h3,
+.algoseek_heading__h3 {
+    font-size: $font-40;
+    font-weight: 700;
+}
+
+h4,
+.algoseek_heading__h4 {
+    font-size: $font-30;
+    font-weight: 600;
+    line-height: 34px;
+
+    @include sm {
+        font-size: $font-24;
+        line-height: 30px;
+    }
+
+    @include xs {
+        font-size: $font-18;
+        line-height: 22px;
+    }
+}
+
+h5,
+.algoseek_heading__h5 {
+    font-size: $font-28;
+
+    @include md {
+        font-size: $font-24;
+    }
+
+    @include sm {
+        font-size: $font-18;
+    }
+}
+
+h6,
+.algoseek_heading__h6 {
+    font-size: $font-20;
+    font-weight: 600;
+
+    @include xl {
+        font-size: $font-18;
+    }
+
+    @include md {
+        font-size: $font-18 - 2;
+    }
+}
+
+p {
+    font-size: $font-18;
+    line-height: 25px;
+
+    @include md {
+        font-size: $font-18 - 2;
+        line-height: 22px;
+    }
+
+    @include sm {
+        font-size: $font-18 - 4;
+        line-height: 18px;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container_wrapper {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.btn_pill {
+    background-color: $green-color;
+    text-align: center;
+    color: $white-color;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: $font-20;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $dark-green;
+        color: $white-color;
+    }
+
+    &.btn_outline_white {
+        background: transparent;
+        color: $white-color;
+        border-color: $white-color;
+
+        &:hover {
+            background-color: $white-color;
+            color: $eerie-black;
+        }
+    }
+
+    &.btn_outline_gray {
+        background: transparent;
+        color: $eerie-black;
+        border-color: $grayish-blue;
+
+        &:hover {
+            background-color: $eerie-black;
+            color: $white-color;
+        }
+    }
+
+    @include xl {
+        padding: 8px 16px;
+        font-size: $font-20 - 2px;
+    }
+
+    @include sm {
+        padding: 8px 14px;
+        font-size: $font-20 - 4;
+    }
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.algoseek_img_ratio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.connect_vertical_line {
+    height: 20px;
+    width: 1px;
+    background: $grayish-blue;
+    margin: 0 auto;
+
+    @include md {
+        height: 14px;
+    }
+}
+
+.connect_horizontal_line {
+    width: 20px;
+    height: 72px;
+
+    @include md {
+        width: 12px !important;
+    }
+
+    div {
+        height: 1px;
+        background: $grayish-blue;
+        width: 20px;
+    }
+
+    @include lg {
+        height: 50px;
+    }
+}

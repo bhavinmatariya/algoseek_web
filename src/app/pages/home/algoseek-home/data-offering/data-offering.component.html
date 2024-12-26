@@ -1,0 +1,90 @@
+<!-- DATA OFFERING SECTION START -->
+<section class="algoseek_data_offering__wrapper space__sm">
+  <div class="container_wrapper">
+    <div class="algoseek__title margin_bottom text-center">
+      <h2 class="lh_11 mb-0">{{ dataOfferingData?.[0]?.title }}</h2>
+      <p class="body_font_md fw-light text_gray">
+        {{ dataOfferingData?.[0]?.description }}
+      </p>
+      <h4 class="text_green lh-12">
+        Available as Historical, Daily & Real-time
+      </h4>
+    </div>
+
+    <div>
+      <div
+        class="algoseek_data d-flex align-items-start justify-content-center justify-content-sm-between flex-wrap flex-md-nowrap gap-4"
+      >
+        <!-- MARKET DATA -->
+        <div class="data_offering__wrapper">
+          <h4 class="text-center">Market data</h4>
+          @for (item of dataOfferingData?.[0]?.market_data; track $index) {
+          <div>
+            <div class="border__grayish-blue rounded-8 p-4 text-center">
+              <div
+                class="d-flex align-items-center justify-content-center gap-4"
+              >
+                <div
+                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"
+                ></div>
+                <p class="body_font mb-0">
+                  {{ item.data_offering_icons_id.label }}
+                </p>
+              </div>
+            </div>
+            @if($index < dataOfferingData?.[0]?.market_data.length - 1) {
+            <div class="connect_vertical_line"></div>
+            }
+          </div>
+          }
+        </div>
+
+        <!-- CORE REFERENCE DATA -->
+        <div class="data_offering__wrapper">
+          <h4 class="text-center">Core reference data</h4>
+          @for (item of dataOfferingData?.[0]?.core_reference_data; track $index) {
+            <div>
+                <div class="border__grayish-blue rounded-8 p-4 text-center">
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-4"
+                  >
+                  <div
+                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"
+                ></div>
+                    <p class="body_font mb-0">{{item.data_offering_icons_id.label}}</p>
+                  </div>
+                </div>
+                @if($index < dataOfferingData?.[0]?.core_reference_data.length - 1) {
+                <div class="connect_vertical_line"></div>
+                }
+              </div>
+          }
+        </div>
+
+        <!-- EXTENDED REFERENCE DATA -->
+        <div class="data_offering__wrapper">
+          <h4 class="text-center">Extended reference data</h4>
+
+          @for (item of dataOfferingData?.[0]?.extended_reference_data; track $index) {
+            <div>
+            <div class="border__grayish-blue rounded-8 p-4 text-center">
+              <div
+                class="d-flex align-items-center justify-content-center gap-4"
+              >
+                <div
+                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"
+                ></div>
+                <p class="body_font mb-0">{{item.data_offering_icons_id.label}}</p>
+              </div>
+            </div>
+            @if($index < dataOfferingData?.[0]?.extended_reference_data.length - 1) {
+            <div class="connect_vertical_line"></div>
+            }
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DATA OFFERING SECTION END -->

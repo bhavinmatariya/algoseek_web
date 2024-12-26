@@ -1,0 +1,43 @@
+@import '../../../../../assets/styles/responsive';
+
+.algoseek__title {
+    p {
+        margin: 24px auto;
+        max-width: 950px;
+        width: 100%;
+    }
+}
+
+.algoseek_data {
+    @include md {
+        row-gap: 40px !important;
+    }
+}
+
+.data_offering__wrapper {
+    max-width: 426px;
+    width: 100%;
+
+    h4 {
+        margin-bottom: 24px;
+
+        @include md {
+            margin-bottom: 18px;
+            font-size: 21px;
+        }
+
+        @include sm {
+            margin-bottom: 12px;
+        }
+    }
+
+    @include md {
+        max-width: 310px;
+        flex: 48%;
+    }
+
+    @include sm {
+        max-width: 100%;
+        flex: 100%;
+    }
+}

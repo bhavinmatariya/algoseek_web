@@ -1,0 +1,25 @@
+@import '../../../../../assets/styles/responsive';
+
+.algoseek__title {
+    h4 {
+        margin-bottom: 16px;
+    }
+}
+
+.img_ratio_padding {
+    padding-top: 102.4%;
+    overflow: hidden;
+
+    img {
+        filter: grayscale(0.8);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    @include sm {
+        padding-top: 55.4%;
+    }
+}

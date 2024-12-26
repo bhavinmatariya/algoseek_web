@@ -1,0 +1,30 @@
+<!-- DATA AND SERVICES SECTION START -->
+ <section class="algoseek_data_services__wrapper bg_eerie_black space__sm position-relative">
+    <div class="position-absolute top-0 start-0">
+        <img src="../../../../../assets/images/bg/home-page/gradient_up.png" alt="gradient" class="h-100 w-100">
+    </div>
+    <div class="position-absolute bottom-0 end-0">
+        <img src="../../../../../assets/images/bg/home-page/gradient_down.png" alt="gradient" class="h-100 w-100">
+    </div>
+    <div class="container_wrapper">
+        <div class="algoseek__title margin_bottom text-center">
+            <h4 class="text_green lh-12">{{ dataServicesContent?.subtitle }}</h4>
+            <h2 class="text-white lh_11 mb-0" [innerHTML]="dataServicesContent?.title"></h2>
+        </div>
+
+        <div>
+            <div class="row gy-4">
+
+                @for(item of dataServicesContent?.images; track item; let i = $index){
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="position-relative img_ratio_padding">
+                            <img src="{{baseURL}}/assets/{{item.use_cases_images_id.image}}" alt="data and Services" class="algoseek_img_ratio d-none d-sm-block">
+                            <img src="../../../../../assets/images/images/data-and-services/{{imageMObile[i]}}" alt="data and Services" class="algoseek_img_ratio d-block d-sm-none">
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- DATA AND SERVICES SECTION END -->

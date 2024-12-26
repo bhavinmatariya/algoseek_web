@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import './assets/styles/styles.scss';
+
+// @import './assets/styles/variables';
+// @import './assets/styles/fonts';
+// @import './assets/styles/helper';
+// @import './assets/styles/common';

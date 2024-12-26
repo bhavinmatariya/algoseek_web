@@ -1,0 +1,30 @@
+export const API_FIELDS = {
+  SLIDER: ['id', 'title', 'subtitle', 'order', 'description'],
+  STATS_NUMBERS: ['number', 'description'],
+  HP_ALGOSEEK_CONSOLE: ['id', 'title', 'description', 'image', 'icons'],
+  HP_ALGOSEEK_CONSOLE_ICONS: ['id', 'name', 'svg'],
+  TRUSTED_PARTNERS: ['id', 'order', 'partner_logo'],
+  DATA_PACKAGES: ['is_new', 'title', 'description', 'items', 'image'],
+  DATA_PACKAGES_ITEM: ['name', 'description'],
+  DATA_AND_SERVICES: [
+    'id',
+    'title',
+    'subtitle',
+    'description',
+    'data_services_cards',
+  ],
+  DATA_AND_SERVICES_CARDS: ['name', 'image_url'],
+  DATA_OFFERINGS: [
+    '*.data_offering_icons_id.label',
+    '*.data_offering_icons_id.svg',
+  ],
+  ALGOSEEK_CONSOLE: ['title', 'content', 'description'],
+  REAL_TIME_DATA: ['title', 'subtitle', 'description'],
+  USE_CASES: [
+    'title',
+    'subtitle',
+    'images.use_cases_images_id.image',
+    'images.use_cases_images_id.order',
+  ],
+  VISITOR: ['title', 'subtitle', 'description'],
+} as const;

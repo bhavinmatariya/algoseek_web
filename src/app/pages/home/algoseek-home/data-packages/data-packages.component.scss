@@ -1,0 +1,77 @@
+@import '../../../../../assets/styles/variables';
+@import '../../../../../assets/styles/responsive';
+
+.algoseek__title {
+    h2 {
+        margin: 24px 0 16px 0;
+    }
+
+    .algoseek_badge {
+        padding: 5px 16px;
+    }
+}
+
+.data_package__wrapper {
+    gap: $space-100;
+
+    @include lg {
+        gap: 6rem !important;
+    }
+
+    .data_package_image_wrap {
+        max-width: 632px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        @include md {
+            max-width: 100%;
+        }
+
+        .data_package_image {
+            padding-top: 110.4%;
+        }
+    }
+
+    .packages {
+        ul {
+            li {
+                position: relative;
+                padding-left: 28px;
+                border-left: 1px dashed $green-color;
+                padding-bottom: $space-64;
+
+                @include sm {
+                    padding-bottom: $space-64 - 3;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 0px;
+                    left: -10px;
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background: $white-color;
+                    outline: 4px solid $green-color;
+                    outline-offset: -10px;
+                    border: 1px solid $green-color;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+
+                h4 {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        .btn_pill {
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+}

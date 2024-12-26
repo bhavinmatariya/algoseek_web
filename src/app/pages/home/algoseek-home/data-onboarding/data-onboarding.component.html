@@ -1,0 +1,149 @@
+<!-- DATA ONBOARDING SECTION START -->
+ @if (onboardingData.length > 0) {
+<div class="algoseek_data_onboarding space__sm">
+  <div class="container_wrapper">
+    <div class="algoseek__title margin_bottom text-center">
+      <h4 class="text_green">{{ onboardingData[0]?.subtitle }}</h4>
+      <h2 class="lh_11 mb-0 mx-auto">{{ onboardingData[0]?.title }}</h2>
+    </div>
+
+    <div>
+      <div>
+        <div
+          class="onboarding__wrapper margin_bottom d-flex align-items-center justify-content-center"
+        >
+          <div class="onboarding_tile flex-shrink-0 position-relative">
+            <img
+              src="{{ baseURL }}/assets/{{ _dataOnboardingBGArrows[0] }}"
+              alt="icon"
+              class="d-block h-100 w-100 position-absolute  d-none d-lg-block"
+            />
+            <img
+              src="../../../../../assets/images/bg/home-page/data-onboarding/mobile-bg-1.png"
+              alt="bg"
+              class="h-100 w-100 position-absolute mobile_image_bg d-block d-lg-none"
+            />
+            <div class="onboarding_data__wrap position-relative z-2">
+              <div class="icons mx-auto">
+                <img
+                  src="{{ baseURL }}/assets/{{ _dataOnboardingBGIcons[0] }}"
+                  alt="icon"  
+                  class="d-block h-100 w-100"
+                />
+              </div>
+              <h6 class="text-center">{{ onboardingCardsData[0].name }}</h6>
+            </div>
+          </div>
+
+          <div class="onboarding_tile flex-shrink-0 position-relative">
+            <img
+              src="{{ baseURL }}/assets/{{ _dataOnboardingBGArrows[1] }}"
+              alt="icon"
+              class="d-block h-100 w-100 position-absolute  d-none d-lg-block"
+            />
+            <img
+              src="../../../../../assets/images/bg/home-page/data-onboarding/mobile-bg-2.png"
+              alt="bg"
+              class="h-100 w-100 position-absolute mobile_image_bg d-block d-lg-none"
+            />
+            <div class="onboarding_data__wrap position-relative z-2">
+              <div class="icons mx-auto">
+                <img
+                  src="{{ baseURL }}/assets/{{ _dataOnboardingBGIcons[1] }}"
+                  alt="icon"
+                  class="d-block h-100 w-100"
+                />
+              </div>
+              <h6 class="text-center">{{ onboardingCardsData[1].name }}</h6>
+            </div>
+          </div>
+
+          <div class="onboarding_tile flex-shrink-0 position-relative">
+            <img
+              src="{{ baseURL }}/assets/{{ _dataOnboardingBGArrows[2] }}"
+              alt="icon"
+              class="d-block h-100 w-100 position-absolute  d-none d-lg-block"
+            />
+            <img
+              src="../../../../../assets/images/bg/home-page/data-onboarding/mobile-bg-3.png"
+              alt="bg"
+              class="h-100 w-100 position-absolute mobile_image_bg d-block d-lg-none"
+            />
+            <div class="onboarding_data__wrap position-relative z-2">
+              <div class="icons mx-auto">
+                <img
+                  src="{{ baseURL }}/assets/{{ _dataOnboardingBGIcons[2] }}"
+                  alt="icon"
+                  class="d-block h-100 w-100"
+                />
+              </div>
+              <h6 class="text-center">{{ onboardingCardsData[2].name }}</h6>
+            </div>
+          </div>
+          <div
+            class="onboarding_tile--last position-relative d-flex align-items-center flex-column flex-lg-row"
+          >
+            <img
+              src="{{ baseURL }}/assets/{{ _dataOnboardingBGArrows[3] }}"
+              alt="icon"
+              class="d-block h-100 w-100 position-absolute  d-none d-lg-block"
+            />
+            <img
+              src="../../../../../assets/images/bg/home-page/data-onboarding/mobile-bg-4.png"
+              alt="bg"
+              class="h-100 w-100 position-absolute mobile_image_bg d-block d-lg-none"
+            />
+            <div class="onboarding_tile flex-shrink-0">
+              <div class="onboarding_data__wrap position-relative z-2">
+                <div class="icons mx-auto">
+                  <img
+                    src="{{ baseURL }}/assets/{{ _dataOnboardingBGIcons[3] }}"
+                    alt="icon"
+                    class="d-block h-100 w-100"
+                  />
+                </div>
+                <h6 class="text-center">{{ onboardingCardsData[3].name }}</h6>
+              </div>
+            </div>
+            <div class="onboarding_tile flex-shrink-0">
+              <div class="onboarding_data__wrap position-relative z-2">
+                <div class="icons mx-auto">
+                  <img
+                    src="{{ baseURL }}/assets/{{ _dataOnboardingBGIcons[4] }}"
+                    alt="icon"
+                    class="d-block h-100 w-100"
+                  />
+                </div>
+                <h6 class="text-center text-white">
+                  {{ onboardingCardsData[4].name }}
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="onboarding_detail">
+          <p class="body_font text_gray mx-auto text-center w-full">
+            {{ onboardingData[0].description }}
+          </p>
+
+          <button class="btn_pill btn_outline_gray mx-auto">
+            Learn more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="currentColor"
+            >
+              <path
+                d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DATA ONBOARDING SECTION END -->
+</div>
+}

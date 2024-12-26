@@ -1,0 +1,60 @@
+@import '../../../../../assets/styles/responsive';
+
+.algoseek_realtime__wrapper {
+    .algoseek_title__wrapper {
+        h2 {
+            margin-bottom: 24px;
+
+            @include md {
+                margin-bottom: 10px;
+            }
+        }
+
+        .realtime_description {
+            max-width: 950px;
+        }
+    }
+
+    .algoseek_data__wrapper {
+
+        .algoseek_data {
+            @include sm {
+                row-gap: 40px !important;
+            }
+        }
+
+        .realtime_data__wrapper {
+            max-width: 353px;
+            width: 100%;
+
+            &.algoseek_flexible_access {
+                max-width: 494px;
+                width: 100%;
+
+                .flexiable_access_data {
+                    height: 72px;
+
+                    @include lg {
+                        height: 50px;
+                    }
+                }
+
+                .connection__wrapper {
+                    gap: 20px;
+
+                    @include sm {
+                        gap: 14px;
+                    }
+                }
+            }
+
+            h4 {
+                margin-bottom: 24px;
+            }
+
+            @include lg {
+                max-width: 250px;
+            }
+        }
+    }
+}

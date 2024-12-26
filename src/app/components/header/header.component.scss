@@ -1,0 +1,122 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/common';
+@import '../../../assets/styles/helper';
+@import '../../../assets/styles/responsive';
+
+/* HEADER START */
+.algoseek_header_wrapper {
+    padding: 40.5px 0;
+
+    @include xl {
+        padding: 28px 0;
+    }
+
+    @include sm {
+        padding: 14px 0;
+    }
+}
+
+.logo {
+    width: 254px;
+    z-index: 1;
+
+    // --------- RESPONSIVENESS ---------
+    @include xl {
+        width: 170px;
+    }
+
+    @include sm {
+        width: 160px;
+    }
+}
+
+.nav-links {
+    .nav-link {
+        padding: 16px 28px;
+        color: $eerie-black;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            height: 6px;
+            width: 6px;
+            background-color: $green-color;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            bottom: 8px;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            color: $green-color;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        // --------- RESPONSIVENESS ---------
+        @include xl {
+            padding: 16px 20px;
+        }
+
+        @include lg {
+            padding: 24px 20px;
+        }
+    }
+}
+
+// --------- RESPONSIVENESS ---------
+
+.nav_links_wrapper {
+    @include lg {
+        position: fixed;
+        top: 0;
+        right: -150%;
+        max-width: 400px;
+        width: 100%;
+        background: $white-color;
+        height: 100vh;
+        padding: 15px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+        @include sm {
+            max-width: 320px;
+        }
+
+        @include xs {
+            max-width: 100%;
+        }
+    }
+}
+
+.showMenu {
+    &.nav_links_wrapper {
+        right: 0;
+        overflow-y: auto;
+
+        .nav-links {
+            padding-top: 40px;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+
+            .nav-item {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .btn-close {
+        float: inline-end;
+    }
+}
+
+/* HEADER END */

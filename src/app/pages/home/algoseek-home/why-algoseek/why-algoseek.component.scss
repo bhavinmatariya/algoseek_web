@@ -1,0 +1,60 @@
+@import '../../../../../assets/styles/variables';
+@import '../../../../../assets/styles/responsive';
+
+.algoseek__title {
+    h2 {
+        margin-bottom: 64px;
+    }
+}
+
+.why_algoseek_reasons {
+    margin-bottom: 64px;
+
+    p {
+        &.body_font {
+            @include lg {
+                font-size: $font-18;
+            }
+
+            @include sm {
+                font-size: $font-18 - 2;
+            }
+        }
+    }
+
+    .border_bottom__grayish-blue {
+        border-color: $charcoal-gray;
+    }
+
+    .border_right__grayish-blue {
+        border-color: $charcoal-gray;
+    }
+
+    .tile_right {
+        padding-left: 64px;
+
+        @include lg {
+            padding-left: 30px;
+        }
+    }
+
+    .tile_left {
+        padding-right: 64px;
+
+        @include lg {
+            padding-right: 30px;
+        }
+    }
+
+    .icons {
+        height: 56px;
+        width: 56px;
+        flex-shrink: 0;
+
+        @include lg {
+            height: 40px;
+            width: 40px;
+        }
+
+    }
+}

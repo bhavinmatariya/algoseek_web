@@ -1,0 +1,38 @@
+<!-- HERO SECTION START -->
+<section class="hero_wrapper">
+  <div class="container_wrapper">
+    <div class="hero_content position-absolute top-50 start-50 translate-middle w-100">
+      <div class="hero_title">
+        <p class="sub_header__font hero_sub__header text_eerie_black fw-semibold text-center">
+          <span class="d-block">
+            <span class="position-relative">
+              <div class="sub_title_animation animate_wrapper">
+                <div class="word_swap">{{ displayedTitle || '' }}</div>
+              </div>
+            </span>
+          </span>
+        </p>
+        <h1 class="text-center">
+          <span class="main_header_text d-block text-start mx-auto position-relative">Enjoy
+            <span class="animate_wrapper">
+              <span class="word_swap d-inline-block position-absolute">{{
+                subtitleSuffix
+                }}</span>
+            </span>
+          </span>
+          <span class="d-inline-block">
+            Leave data to
+            <span class="text_green">algoseek.</span>
+          </span>
+        </h1>
+        <p class="text_gray sub_header__font fw-semibold text-center mb-0">
+          {{ heroContentData[0].description }}
+        </p>
+      </div>
+    </div>
+    <div class="algoseek_contact_btn flex_center position-fixed">
+      <img src="../../../../../assets/images/images/contact-image/contact_img.png" alt="chat" class="mt-3" />
+    </div>
+  </div>
+</section>
+<!-- HERO SECTION END -->
