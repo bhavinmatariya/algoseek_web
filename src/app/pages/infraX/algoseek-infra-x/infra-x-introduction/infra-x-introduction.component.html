@@ -1,0 +1,109 @@
+<!-- DATA OFFERING SECTION START -->
+<section class="algoseek_introduction__wrapper space__sm">
+    <div class="container_wrapper">
+        <div class="algoseek__title margin_bottom text-center">
+            <h2 class="lh_11 mb-0">Introduction</h2>
+            <p class="body_font_md fw-light text_gray">
+                The algoseek infraX Solution Suite for Data Suppliers offers a comprehensive toolkit for building,
+                publishing, selling, delivering, and supporting data products. Designed modularly, you can select the
+                precise modules and sub-modules that fit your needs. Opt for a self-service SaaS approach, a managed
+                service with custom development by algoseek, or a blend of both, according to your preferences.
+            </p>
+        </div>
+
+        <div>
+            <div class="infraX__content_wrapper">
+                <div class="infraX_shapes__wrapper">
+                    <div class="position-relative">
+                        <div class="infraX_data__title text-center bg-white position-relative">
+                            <p class="mb-0 d-inline-block bg-white position-relative z-1 px-3">Data Product Creation</p>
+                        </div>
+                        <div class="d-flex align-items-center w-100 position-relative" style="margin-bottom: 54px;">
+                            @for (data of infraXcontent; track $index) {
+                            @if($index < 6) { <div
+                                class="infraX_data d-flex align-items-center justify-content-center position-relative">
+                                <div class="infraX_shape__right position-absolute top-0">
+                                    <svg width="250" height="100" viewBox="0 0 250 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H204L250 50L204 100H0L46 50L0 0Z" fill="#F5F6F7" />
+                                    </svg>
+
+                                </div>
+                                <p class="infraX__category fw-semibold mb-0 text-center body_font_sm "> {{data.category}} </p>
+                        </div>
+                        }
+                        }
+                        <div class="curve__right position-absolute">
+                            <svg width="429" height="294" viewBox="0 0 429 294" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M282 100H237L283 50L237 0H282C363.186 0 429 65.8141 429 147C429 228.186 363.186 294 282 294H46L0 244L46 194H282C307.957 194 329 172.957 329 147C329 121.043 307.957 100 282 100Z"
+                                    fill="#F5F6F7" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M282 100H237L283 50L237 0H282C363.186 0 429 65.8141 429 147C429 228.186 363.186 294 282 294H46L0 244L46 194H282C307.957 194 329 172.957 329 147C329 121.043 307.957 100 282 100Z"
+                                    fill="#7DCD61" fill-opacity="0.426" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+
+                    <div class="infraX_data_automation_title text-center bg-white position-relative mx-auto">
+                        <p class="mb-0 d-inline-block bg-white position-relative z-1 px-3">Sales Automation</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center w-100 position-relative"
+                        style="margin-bottom: 54px;">
+                        @for (data of infraXcontent; track $index) {
+                        @if($index >= 6 && $index <= 8) { <div
+                            class="infraX_data__automation infraX_data d-flex align-items-center justify-content-center position-relative">
+                            <div class="infraX_shape__left position-absolute top-0">
+                                <svg width="250" height="100" viewBox="0 0 250 100" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M250 0H46L0 50L46 100H250L204 50L250 0Z" fill="#F5F6F7" />
+                                    <path d="M250 0H46L0 50L46 100H250L204 50L250 0Z" fill="#7DCD61"
+                                        fill-opacity="0.639" />
+                                </svg>
+                            </div>
+                            <p class="infraX__category fw-semibold mb-0 body_font_sm "> {{data.category}} </p>
+                    </div>
+                    }
+                    }
+                    <div class="curve__left position-absolute">
+                        <svg width="398" height="294" viewBox="0 0 398 294" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M147 194H248L294 244L248 294H147C65.8141 294 0 228.186 0 147C0 65.8141 65.8141 0 147 0H398L352 50L398 100H147C121.043 100 100 121.043 100 147C100 172.957 121.043 194 147 194Z"
+                                fill="#F5F6F7" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M147 194H248L294 244L248 294H147C65.8141 294 0 228.186 0 147C0 65.8141 65.8141 0 147 0H398L352 50L398 100H147C121.043 100 100 121.043 100 147C100 172.957 121.043 194 147 194Z"
+                                fill="#7DCD61" fill-opacity="0.71" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="infraX_data_support_title text-center bg-white position-relative mx-auto">
+                    <p class="mb-0 d-inline-block bg-white position-relative z-1 px-3">Support</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-100">
+                    @for (data of infraXcontent; track $index) {
+                    @if($index >= 9 && $index <= 12) { <div
+                        class="infraX_data d-flex align-items-center justify-content-center position-relative">
+                        <div class="infraX_shape__right position-absolute top-0">
+                            <svg width="250" height="100" viewBox="0 0 250 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H204L250 50L204 100H0L46 50L0 0Z" fill="#F5F6F7" />
+                            </svg>
+
+                        </div>
+                        <p class="infraX__category fw-semibold mb-0 text-center body_font_sm "> {{data.category}} </p>
+                </div>
+                }
+                }
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- DATA OFFERING SECTION END -->

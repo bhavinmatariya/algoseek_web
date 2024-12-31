@@ -1,0 +1,53 @@
+@import '../../../../../assets/styles/variables';
+
+// INFRAX SECTION START
+.infraX_wrapper {
+    height: calc(100vh - 140px);
+}
+
+.infraX_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    .infraX_title {
+
+        h2 {
+            max-width: 578px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 70px;
+        }
+    }
+}
+
+.ts-particles {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+:host ::ng-deep {
+    #tsparticles {        
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 1;
+    }
+}
+
+// INFRAX SECTION END
+
+// CUTSOM MEDIA QUERY FOR LAPTOP SCREEN
+
+@media (max-width: 1499px) {
+    .infraX_content {
+        .infraX_title {
+            h2 {
+                max-width: 600px;
+            }
+        }
+    }
+}
