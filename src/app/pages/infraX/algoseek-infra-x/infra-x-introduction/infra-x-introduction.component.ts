@@ -9,6 +9,22 @@ import { Component } from '@angular/core';
   styleUrl: './infra-x-introduction.component.scss',
 })
 export class InfraXIntroductionComponent {
+  colors: string[] = [
+    '#f5f6f7',
+    '#edf5ed',
+    '#e3f0e1',
+    '#dcedd8',
+    '#d4ebcc',
+    '#cde8c3',
+    '#a8db97',
+    '#b1dea2',
+    '#b8e0ab',
+    '#97d681',
+    '#8fd477',
+    '#87d16d',
+    '#7dcc60'
+  ];
+
   infraXcontent = [
     { id: 1, category: 'Data Source Connectors' },
     {

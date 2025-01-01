@@ -18,14 +18,14 @@
                         <div class="infraX_data__title text-center bg-white position-relative">
                             <p class="mb-0 d-inline-block bg-white position-relative z-1 px-3">Data Product Creation</p>
                         </div>
-                        <div class="d-flex align-items-center w-100 position-relative" style="margin-bottom: 54px;">
+                        <div class="d-flex align-items-center w-100 position-relative space_mb">
                             @for (data of infraXcontent; track $index) {
                             @if($index < 6) { <div
                                 class="infraX_data d-flex align-items-center justify-content-center position-relative">
                                 <div class="infraX_shape__right position-absolute top-0">
                                     <svg width="250" height="100" viewBox="0 0 250 100" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0H204L250 50L204 100H0L46 50L0 0Z" fill="#F5F6F7" />
+                                        <path d="M0 0H204L250 50L204 100H0L46 50L0 0Z"  [attr.fill]="colors[$index % colors.length]" />
                                     </svg>
 
                                 </div>
@@ -48,20 +48,18 @@
                     </div>
 
 
-                    <div class="infraX_data_automation_title text-center bg-white position-relative mx-auto">
+                    <div class="infraX_data_automation_title text-center bg-white position-relative">
                         <p class="mb-0 d-inline-block bg-white position-relative z-1 px-3">Sales Automation</p>
                     </div>
-                    <div class="d-flex align-items-center justify-content-center w-100 position-relative"
-                        style="margin-bottom: 54px;">
+                    <div class="d-flex align-items-center justify-content-center w-100 position-relative space_mb">
                         @for (data of infraXcontent; track $index) {
                         @if($index >= 6 && $index <= 8) { <div
                             class="infraX_data__automation infraX_data d-flex align-items-center justify-content-center position-relative">
                             <div class="infraX_shape__left position-absolute top-0">
                                 <svg width="250" height="100" viewBox="0 0 250 100" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M250 0H46L0 50L46 100H250L204 50L250 0Z" fill="#F5F6F7" />
-                                    <path d="M250 0H46L0 50L46 100H250L204 50L250 0Z" fill="#7DCD61"
-                                        fill-opacity="0.639" />
+                                    <path d="M250 0H46L0 50L46 100H250L204 50L250 0Z" [attr.fill]="colors[$index % colors.length]" />
+                                    <path d="M250 0H46L0 50L46 100H250L204 50L250 0Z"/>
                                 </svg>
                             </div>
                             <p class="infraX__category fw-semibold mb-0 body_font_sm "> {{data.category}} </p>
@@ -81,17 +79,17 @@
                     </div>
                 </div>
 
-                <div class="infraX_data_support_title text-center bg-white position-relative mx-auto">
+                <div class="infraX_data_support_title text-center bg-white position-relative">
                     <p class="mb-0 d-inline-block bg-white position-relative z-1 px-3">Support</p>
                 </div>
-                <div class="d-flex align-items-center justify-content-center w-100">
+                <div class="infraX_support__wrapper d-flex align-items-center justify-content-center w-100">
                     @for (data of infraXcontent; track $index) {
                     @if($index >= 9 && $index <= 12) { <div
-                        class="infraX_data d-flex align-items-center justify-content-center position-relative">
+                        class="infraX_data infraX_data__support d-flex align-items-center justify-content-center position-relative">
                         <div class="infraX_shape__right position-absolute top-0">
                             <svg width="250" height="100" viewBox="0 0 250 100" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0H204L250 50L204 100H0L46 50L0 0Z" fill="#F5F6F7" />
+                                <path d="M0 0H204L250 50L204 100H0L46 50L0 0Z" [attr.fill]="colors[$index % colors.length]" />
                             </svg>
 
                         </div>

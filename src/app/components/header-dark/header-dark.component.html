@@ -1,12 +1,13 @@
 <!-- HEADER START -->
-<header class="bg-black">
+<header class="header__wrapper bg-black position-fixed w-100 z-1" id="algoseekHeader" [class.bg_light]="isScrolled" [ngClass]="{'bg-black': !isScrolled}">
     <div class="algoseek_header_wrapper space-bottom__sm position-relative">
         <div class="container_wrapper">
             <div class="d-flex align-items-center justify-content-between">
                 <!-- LOGO START -->
                 <div class="logo">
                     <a routerLink="/" class="flex_center">
-                        <img src="../../../assets/images/logo/logo-light.png" alt="logo" class="h-100 w-100">
+                        <img src="../../../assets/images/logo/logo-light.png" alt="logo" class="h-100 w-100" [ngClass]="{'d-flex': !isScrolled, 'd-none': isScrolled}">
+                        <img src="../../../assets/images/logo/logo.png" alt="logo" class="h-100 w-100" [ngClass]="{'d-none': !isScrolled}">
                     </a>
                 </div>
                 <!-- LOGO END -->

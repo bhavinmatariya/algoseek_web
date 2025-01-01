@@ -12,6 +12,7 @@ import { DataOnboardingComponent } from "./data-onboarding/data-onboarding.compo
 import { InfraConnectComponent } from "./infra-connect/infra-connect.component";
 import { WhyAlgoseekComponent } from "./why-algoseek/why-algoseek.component";
 import { ContactAlgoseekComponent } from "./contact-algoseek/contact-algoseek.component";
+import { HeaderComponent } from "../../../components/header/header.component";
 
 @Component({
   selector: 'app-algoseek-home',
@@ -29,7 +30,8 @@ import { ContactAlgoseekComponent } from "./contact-algoseek/contact-algoseek.co
     DataOnboardingComponent,
     InfraConnectComponent,
     WhyAlgoseekComponent,
-    ContactAlgoseekComponent
+    ContactAlgoseekComponent,
+    HeaderComponent
 ],
   templateUrl: './algoseek-home.component.html',
   styleUrl: './algoseek-home.component.scss',

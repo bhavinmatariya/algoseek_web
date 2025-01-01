@@ -2,7 +2,33 @@
 
 // INFRAX SECTION START
 .infraX_wrapper {
-    height: calc(100vh - 140px);
+    height: 100vh;
+}
+
+.bg_gradient_bottom {
+    background-image: linear-gradient(to bottom,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 70%,
+            rgba(0, 0, 0, 0) 0%,
+            rgb(0, 0, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bg_gradient_top {
+    background-image: linear-gradient(to top,
+            rgb(0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 30%,
+            rgba(0, 0, 0, 0) 0%,
+            rgb(0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .infraX_content {
@@ -16,9 +42,6 @@
     .infraX_title {
 
         h2 {
-            max-width: 578px;
-            width: 100%;
-            margin: 0 auto;
             font-size: 70px;
         }
     }
@@ -30,24 +53,32 @@
     display: block;
 }
 
-:host ::ng-deep {
-    #tsparticles {        
+::ng-deep {
+    #tsparticles {
         width: 100% !important;
         height: 100% !important;
-        z-index: 1;
+        // z-index: 0;
+        position: relative;
+
+        canvas {
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
+        }
+    }
+}
+
+#tsparticles {
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0;
+    position: relative;
+
+    canvas {
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
     }
 }
 
 // INFRAX SECTION END
-
-// CUTSOM MEDIA QUERY FOR LAPTOP SCREEN
-
-@media (max-width: 1499px) {
-    .infraX_content {
-        .infraX_title {
-            h2 {
-                max-width: 600px;
-            }
-        }
-    }
-}

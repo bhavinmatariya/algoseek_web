@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header-dark',
@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderDarkComponent {
   isMobileMenuexpand: boolean = false;
+  isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 680;
+  }
 
   onMobileMenuexpand() {
     this.isMobileMenuexpand = !this.isMobileMenuexpand;

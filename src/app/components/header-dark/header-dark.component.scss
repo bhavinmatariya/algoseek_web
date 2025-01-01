@@ -4,12 +4,26 @@
 @import '../../../assets/styles/responsive';
 
 /* HEADER START */
+.bg_light {
+    background-color: $white-color;
+
+    .nav-links {
+        .nav-link {
+            color: $eerie-black;
+
+            &:hover {
+                color: $green-color;
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
 .algoseek_header_wrapper {
     padding: 40.5px 0;
-
-    @include xl {
-        padding: 28px 0;
-    }
 
     @include sm {
         padding: 14px 0;
@@ -111,6 +125,12 @@
                 text-align: center;
             }
         }
+    }
+}
+
+@media (max-width: 1599px) {
+    .algoseek_header_wrapper {
+        padding: 28px 0;
     }
 }
 

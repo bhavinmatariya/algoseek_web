@@ -1,8 +1,8 @@
 <!-- HERO SECTION START -->
-<section class="infraX_wrapper bg-black">
-    <!-- <ngx-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
-        (particlesLoaded)="particlesLoaded($event)"></ngx-particles> -->
-        <ngx-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
+<section class="infraX_wrapper">
+    <ngx-particles class="ts-particles" [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ngx-particles>
+    <div class="bg_gradient_top"></div>
+    <div class="bg_gradient_bottom"></div>
     <div class="container_wrapper">
         <div class="infraX_content position-absolute top-50 start-50 translate-middle w-100">
             <div class="infraX_title text-center text_white">
@@ -10,7 +10,8 @@
                     <span class="text_green d-block fw-semibold mb-4">infraX</span>
 
                     <span class="lh_11">
-                        Solution Suite for Data Supplier
+                        Solution Suite 
+                        <br />for Data Supplier
                     </span>
                 </h2>
                 <p class="body_font_md">A complete package to build, sell, deliver and mamintain data products to
