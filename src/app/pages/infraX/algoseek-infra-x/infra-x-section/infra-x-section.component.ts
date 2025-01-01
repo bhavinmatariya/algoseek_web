@@ -39,7 +39,7 @@ export class InfraXSectionComponent {
         value: '#4b4f4b',
       },
       links: {
-        color: '#293d37',
+        color: '#5f897c',
         distance: 150,
         enable: true,
         opacity: 1,

@@ -14,7 +14,7 @@
     width: 100%;
 
     p {
-        max-width: 150px;
+        max-width: 144px;
         width: 100%;
         z-index: 99;
         text-align: center;
@@ -134,7 +134,7 @@
         min-height: 84px;
 
         p {
-            margin-left: 16px;
+            max-width: 130px;
         }
 
         &:not(:first-child) {

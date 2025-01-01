@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-infra-x-introduction',
@@ -8,7 +9,14 @@ import { Component } from '@angular/core';
   templateUrl: './infra-x-introduction.component.html',
   styleUrl: './infra-x-introduction.component.scss',
 })
-export class InfraXIntroductionComponent {
+export class InfraXIntroductionComponent implements OnInit, AfterViewInit {
+  ngOnInit(): void {
+    AOS.init();
+  }
+
+  ngAfterViewInit() {
+    AOS.refresh();
+  }
   colors: string[] = [
     '#f5f6f7',
     '#edf5ed',
@@ -22,7 +30,7 @@ export class InfraXIntroductionComponent {
     '#97d681',
     '#8fd477',
     '#87d16d',
-    '#7dcc60'
+    '#7dcc60',
   ];
 
   infraXcontent = [
