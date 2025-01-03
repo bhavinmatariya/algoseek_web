@@ -1,6 +1,10 @@
 @import '../../../../../assets/styles/variables';
 
 .algoseek__title {
+    h2 {
+        font-family: 'Helvetica Neue';
+    }
+
     p {
         margin: 24px auto;
         max-width: 884px;
@@ -134,7 +138,7 @@
         min-height: 84px;
 
         p {
-            max-width: 130px;
+            max-width: 124px;
         }
 
         &:not(:first-child) {
