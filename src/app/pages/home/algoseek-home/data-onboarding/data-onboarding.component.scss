@@ -1,10 +1,11 @@
 .algoseek__title {
+    margin-bottom: 4.8rem;
+
     h4 {
         margin-bottom: 16px;
     }
 
     h2 {
-        max-width: 880px;
         width: 100%;
     }
 }
@@ -17,6 +18,7 @@
 }
 
 .onboarding__wrapper {
+    margin-bottom: 4.8rem;
 
     .onboarding_tile {
         min-height: 273px;
@@ -33,7 +35,7 @@
             width: 100%;
 
             h6 {
-                max-width: 170px;
+                max-width: 184px;
             }
         }
     }
@@ -51,7 +53,28 @@
     margin-bottom: 24px;
 }
 
+.space_n_left {
+    margin-left: -56px;
+}
+
 // Custom media for responsive view 
+
+@media (max-width: 1599px) {
+
+    .space_n_left {
+        margin-left: 0;
+    }
+
+    .onboarding__wrapper {
+        .onboarding_tile {
+            max-width: 286px;
+        }
+
+        .onboarding_data__wrap {
+            max-width: 286px;
+        }
+    }
+}
 
 @media (max-width: 1499px) {
     .onboarding__wrapper {
@@ -104,6 +127,10 @@
             .onboarding_data__wrap {
                 max-width: 210px;
                 min-height: 210px;
+
+                h6 {
+                    max-width: 150px;
+                }
             }
         }
 
@@ -116,7 +143,7 @@
 
 @media (max-width: 1024px) {
     .onboarding__wrapper {
-        .onboarding_tile{
+        .onboarding_tile {
             max-width: 194px;
             min-height: 210px;
 

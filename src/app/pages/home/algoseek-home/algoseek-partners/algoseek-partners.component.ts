@@ -16,42 +16,13 @@ export class AlgoseekPartnersComponent implements OnInit, OnDestroy {
   private readonly destroy$ = new Subject<void>();
   private readonly environment:any = environment;
   
-  statusData: statusNumber[] = [];
-  partnersData: TrustedPartner[] = [];
+  statusData: statusNumber[] = [];  
   baseUrl = this.environment.apiUrl;
-  
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
-    dots: true,
-    navSpeed: 700,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 2,
-      },
-      740: {
-        items: 3,
-      },
-      940: {
-        items: 6,
-      },
-    },
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    slideBy: 1 
-  };
 
   constructor(private homePageService: HomepageApiService) {}
 
   ngOnInit(): void {
     this.loadStatusData();
-    this.loadPartnersData();
   }
 
   private loadStatusData(): void {
@@ -63,19 +34,6 @@ export class AlgoseekPartnersComponent implements OnInit, OnDestroy {
         next: (data) => {
           this.statusData = data;
           this.processStatusData();
-        },
-        error: (error) => {}
-      });
-  }
-
-  private loadPartnersData(): void {
-    this.homePageService.getTrustedPartnersContent()
-      .pipe(
-        takeUntil(this.destroy$),
-      )
-      .subscribe({
-        next: (data) => {
-          this.partnersData = Array.isArray(data) ? data : [];          
         },
         error: (error) => {}
       });

@@ -9,6 +9,15 @@
 }
 
 @font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../web-fonts/proxima-nova/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../web-fonts/proxima-nova/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Proxima Nova Rg';
     src: url('../web-fonts/proxima-nova/ProximaNova-Regular.woff2') format('woff2'),
         url('../web-fonts/proxima-nova/ProximaNova-Regular.woff') format('woff');
@@ -76,11 +85,11 @@
 }
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../web-fonts/helvetica/HelveticaNeue-Italic.woff2') format('woff2'),
-        url('../web-fonts/helvetica/HelveticaNeue-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+    font-family: 'Helvetica-Black';
+    src: url('../web-fonts/helvetica/Helvetica-Black-SemiBold.woff2') format('woff2'),
+        url('../web-fonts/helvetica/Helvetica-Black-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
     font-display: swap;
 }
 

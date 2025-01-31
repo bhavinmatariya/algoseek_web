@@ -1,183 +1,164 @@
 <!-- REALTIME DATA SECTION START -->
-<section class="algoseek_realtime__wrapper space__sm">
+<section class="algoseek_realtime__wrapper space__xs ">
     <div class="container_wrapper">
         <div class="algoseek_title__wrapper text-center">
-            <h5 class="sub_header__font text_green fw-semibold lh-12 mb-4">{{ realTimeDataContent?.subtitle }}</h5>
+            <h5 class="body_font_md text_green fw-semibold lh-13 mb-4 font_helvetica" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200">{{ realTimeDataContent?.subtitle }}
+            </h5>
             <div *ngIf="realTimeData.length > 0">
-                <h2>{{realTimeDataContent?.title}}</h2>
-                <p class="realtime_description mx-auto">{{realTimeDataContent?.description}}</p>
+                <h2 class="font__sm lh_11 fw-bold font_helvetica" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="300">Real-Time Market Data</h2>
+                <p class="realtime_description mx-auto text_gray body_font_sm lh_14 mb-0" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="400">
+                    Built on a founding team with 140 years of collective experience in data and algo-trading, and with over 60% of our R&D colleagues holding PhDs, algoseek data represents industry’s highest quality, reliability, and flexibility. Whether you need ultra-low-latency data for high frequency trading, absolutely accurate feed for industrial regulation, custom feed combining options and their underlyings for quantitive strategies, or internet-latency data for classroom demonstration and website display, we are here to deliver the real-time data solutions tailored to your needs. </p>
             </div>
         </div>
 
         <!-- REAL TIME DATA INFORMATION START -->
-        <div class="algoseek_data__wrapper space_top__xs space_bottom__xs">
-            <div class="algoseek_data d-flex align-items-start justify-content-center justify-content-sm-between flex-wrap flex-sm-nowrap gap-4">
+        <div class="algoseek_data__wrapper">
+            <div
+                class="algoseek_data d-flex align-items-start justify-content-center justify-content-sm-center flex-wrap flex-sm-nowrap">
 
                 <!-- FLEXIBLE TECHNOLOGY -->
                 <div class="realtime_data__wrapper">
-                    <h4 class="text-center d-flex align-items-center justify-content-center gap-2 flex-sm-column">
-                        <span class="d-block lh-1">Flexible</span>
-                        <span class="d-block lh-1">Technology</span>
+                    <h4 class="body_font_md fw-bold font_proxima_nova_bold text-center lh_12">
+                        Flexible Technology
                     </h4>
 
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-4 text-center">
-                            <h6 class="mb-0">Multicast</h6>
+                        <div class="tech_data border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Multicast</h6>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-4 text-center">
-                            <h6 class="mb-0">TCP Socket</h6>
+                        <div class="tech_data border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">TCP Socket</h6>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-4 text-center">
-                            <h6 class="mb-0">Kafka Streaming</h6>
+                        <div class="tech_data border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Kafka Streaming</h6>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-4 text-center">
-                            <h6 class="mb-0">Restful API</h6>
+                        <div class="tech_data border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Restful API</h6>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-4 text-center">
-                            <h6 class="mb-0">WebSocket</h6>
+                        <div class="tech_data border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">WebSocket</h6>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-4 text-center">
-                            <h6 class="mb-0">Real-time Database</h6>
+                        <div class="tech_data border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Real-time Database</h6>
                         </div>
                     </div>
                 </div>
 
                 <!-- FLEXIBLE LATENCY PROFILE -->
                 <div class="realtime_data__wrapper">
-                    <h4 class="text-center d-flex align-items-center justify-content-center gap-2 flex-sm-column">
-                        <span class="d-block lh-1">Flexible</span>
-                        <span class="d-block lh-1">Latency Profile</span>
+                    <h4 class="body_font_md fw-bold font_proxima_nova_bold text-center lh_12">
+                        Flexible Latency Profile
                     </h4>
 
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-3 text-center">
-                            <h6 class="mb-2"> &lt; 10us</h6>
+                        <div class="border__grayish-blue rounded-8 p-3 text-center h-76">
+                            <h6 class="mb-2 body_font_sm fw-bold lh_14"> &lt; 10us</h6>
                             <p class="text_slate_gray fw-semibold mb-0 body_font_sm">Ultra-low-Latency</p>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-3 text-center">
-                            <h6 class="mb-2"> &lt; 30us</h6>
-                            <p class="text_slate_gray fw-semibold mb-0 body_font_sm">Low latency</p>
+                        <div class="border__grayish-blue rounded-8 p-3 text-center h-76">
+                            <h6 class="mb-2 body_font_sm fw-bold lh_14"> &lt; 30us</h6>
+                            <p class="text_slate_gray fw-bold mb-0 body_font_sm lh_12">Low latency</p>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-3 text-center">
-                            <h6 class="mb-2"> &lt; 100us</h6>
-                            <p class="text_slate_gray fw-semibold mb-0 body_font_sm">Medium latency</p>
+                        <div class="border__grayish-blue rounded-8 p-3 text-center h-76">
+                            <h6 class="mb-2 body_font_sm fw-bold lh_14"> &lt; 100us</h6>
+                            <p class="text_slate_gray fw-bold mb-0 body_font_sm lh_12">Medium latency</p>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-3 text-center">
-                            <h6 class="mb-2"> &lt; 10us</h6>
-                            <p class="text_slate_gray fw-semibold mb-0 body_font_sm">Ultra-low-Latency</p>
+                        <div class="border__grayish-blue rounded-8 p-3 text-center h-76">
+                            <h6 class="mb-2 body_font_sm fw-bold lh_14"> &lt; 10us</h6>
+                            <p class="text_slate_gray fw-bold mb-0 body_font_sm lh_12">Ultra-low-Latency</p>
                         </div>
                         <div class="connect_vertical_line"></div>
                     </div>
                     <div>
-                        <div class="border__grayish-blue rounded-8 p-3 text-center">
-                            <h6 class="mb-2"> &lt; 5 to 10 seconds</h6>
-                            <p class="text_slate_gray fw-semibold mb-0 body_font_sm">Near-realtime</p>
-                        </div>
-                        <div class="connect_vertical_line"></div>
-                    </div>
-                    <div>
-                        <div class="border__grayish-blue rounded-8 p-3 text-center">
-                            <h6 class="mb-2"> &lt; 10/15 minutes</h6>
-                            <p class="text_slate_gray fw-semibold mb-0 body_font_sm">Delayed data</p>
+                        <div class="border__grayish-blue rounded-8 p-3 text-center h-76">
+                            <h6 class="mb-2 body_font_sm fw-bold lh_14"> &lt; 5 to 10 seconds</h6>
+                            <p class="text_slate_gray fw-bold mb-0 body_font_sm lh_12">Near-realtime</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- FLEXIBLE ACCESS -->
                 <div class="realtime_data__wrapper algoseek_flexible_access">
-                    <h4 class="text-center d-flex align-items-center justify-content-center gap-2 flex-sm-column">
-                        <span class="d-block lh-1">Flexible</span>
-                        <span class="d-block lh-1">Access</span>
-                    </h4>
+                    <h4 class="body_font_md fw-bold text-center lh_12 font_proxima_nova_bold">Flexible Access</h4>
 
-                    <div class="d-flex align-items-start">
-                        <div class="w-100">
-                            <div>
-                                <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                    <h6 class="mb-0">Co-location</h6>
-                                </div>
-                                <div class="connect_vertical_line"></div>
-                            </div>
-                            <div>
-                                <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                    <h6 class="mb-0">Cross-Connect</h6>
-                                </div>
-                                <div class="connect_vertical_line opacity-0"></div>
-                            </div>
-                            <div>
-                                <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                    <h6 class="mb-0">Virtual Network</h6>
-                                </div>
-                                <div class="connect_vertical_line"></div>
-                            </div>
-                            <div>
-                                <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                    <h6 class="mb-0">Open Internet</h6>
-                                </div>
-                            </div>
+                    <div>
+                        <div class="flexible__access border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Co-location</h6>
                         </div>
-                        <div class="connection__wrapper d-flex align-items-center flex-column">
-                            <div class="connect_horizontal_line d-flex align-items-center justify-content-center">
-                                <div></div>
-                            </div>
-                            <div class="connect_horizontal_line d-flex align-items-center justify-content-center">
-                                <div></div>
-                            </div>
-                            <div class="connect_horizontal_line d-flex align-items-center justify-content-center">
-                                <div></div>
-                            </div>
-                            <div class="connect_horizontal_line d-flex align-items-center justify-content-center">
-                                <div></div>
-                            </div>
+                        <div class="connect_vertical_line"></div>
+                    </div>
+                    <div>
+                        <div class="flexible__access border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Kafka Streaming</h6>
                         </div>
-                        <div class="w-100">
-                            <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                <h6 class="mb-0">Kafka Streaming</h6>
-                            </div>
-                            <div class="connect_vertical_line opacity-0"></div>
+                        <div class="connect_vertical_line"></div>
+                    </div>
+                    <div>
+                        <div class="flexible__access border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Cross-Connect</h6>
+                        </div>
+                        <div class="connect_vertical_line"></div>
+                    </div>
+                    <div>
+                        <div class="flexible__access border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">ArdaDB</h6>
+                        </div>
+                        <div class="connect_vertical_line"></div>
+                    </div>
+                    <div>
+                        <div class="flexible__access border__grayish-blue rounded-8 text-center">
+                            <h6 class="mb-0 body_font_sm fw-bold lh_14">Virtual Network</h6>
+                        </div>
+                        <div class="connect_vertical_line"></div>
+                    </div>
+                    <div>
+                        <div class="flexible__access border__grayish-blue rounded-8 text-center">
+                            <span class="d-flex align-items-center justify-content-center">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2805_12804)">
+                                        <path
+                                            d="M12.3334 4C13.4379 4 14.3334 3.10457 14.3334 2C14.3334 0.89543 13.4379 0 12.3334 0C11.2288 0 10.3334 0.89543 10.3334 2C10.3334 3.10457 11.2288 4 12.3334 4Z"
+                                            fill="#797C80" />
+                                        <path
+                                            d="M12.3334 14C13.4379 14 14.3334 13.1046 14.3334 12C14.3334 10.8954 13.4379 10 12.3334 10C11.2288 10 10.3334 10.8954 10.3334 12C10.3334 13.1046 11.2288 14 12.3334 14Z"
+                                            fill="#797C80" />
+                                        <path
+                                            d="M12.3334 24C13.4379 24 14.3334 23.1046 14.3334 22C14.3334 20.8954 13.4379 20 12.3334 20C11.2288 20 10.3334 20.8954 10.3334 22C10.3334 23.1046 11.2288 24 12.3334 24Z"
+                                            fill="#797C80" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2805_12804">
+                                            <rect width="24" height="24" fill="white" transform="translate(0.333374)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
 
-                            <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                <h6 class="mb-0">ArdaDB</h6>
-                            </div>
-                            <div class="connect_vertical_line"></div>
-
-                            <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                <h6 class="mb-0">AWS Kinesis</h6>
-                            </div>
-                            <div class="connect_vertical_line opacity-0"></div>
-
-                            <div class="flexiable_access_data border__grayish-blue d-flex align-items-center justify-content-center rounded-8 p-4 text-center">
-                                <h6 class="mb-0">Custom Delivery</h6>
-                            </div>
-                            <div class="connect_vertical_line"></div>
-
-                            <div class="border__grayish-blue rounded-8 p-4 text-center">
-                                <h6 class="mb-0">Ticker Plant as a Service</h6>
-                            </div>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -187,10 +168,10 @@
 
         <!-- BOTTOM BUTTONS -->
 
-        <div class="d-flex align-items-center justify-content-center gap-4">
-            <button class="btn_pill">Business</button>
-            <button class="btn_pill">Academic</button>
-            <button class="btn_pill">Individual</button>
+        <div class="d-flex align-items-center justify-content-center bottom__row flex-column flex-sm-row">
+            <button class="btn_pill body_font_md">Business</button>
+            <button class="btn_pill body_font_md">Academic</button>
+            <button class="btn_pill body_font_md">Individual</button>
         </div>
     </div>
 </section>

@@ -13,6 +13,9 @@ import { InfraConnectComponent } from "./infra-connect/infra-connect.component";
 import { WhyAlgoseekComponent } from "./why-algoseek/why-algoseek.component";
 import { ContactAlgoseekComponent } from "./contact-algoseek/contact-algoseek.component";
 import { HeaderComponent } from "../../../components/header/header.component";
+import { WhoWeAreComponent } from "./who-we-are/who-we-are.component";
+import { FooterComponent } from "../../../components/footer/footer.component";
+import { PrivateCloudComponent } from "./private-cloud/private-cloud.component";
 
 @Component({
   selector: 'app-algoseek-home',
@@ -31,7 +34,10 @@ import { HeaderComponent } from "../../../components/header/header.component";
     InfraConnectComponent,
     WhyAlgoseekComponent,
     ContactAlgoseekComponent,
-    HeaderComponent
+    HeaderComponent,
+    WhoWeAreComponent,
+    FooterComponent,
+    PrivateCloudComponent
 ],
   templateUrl: './algoseek-home.component.html',
   styleUrl: './algoseek-home.component.scss',

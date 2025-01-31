@@ -5,11 +5,11 @@ import { AlgoseekHomeComponent } from './pages/home/algoseek-home/algoseek-home.
 export const routes: Routes = [
   {
     path: '',
-    component: AlgoseekInfraXComponent
+    component: AlgoseekHomeComponent
   },
   {
-    path: 'home',
-    component: AlgoseekHomeComponent,
+    path: 'infra-x',
+    component: AlgoseekInfraXComponent,
   },
   {
     path: '**',

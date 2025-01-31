@@ -5,7 +5,7 @@
 
 h1,
 .algoseek_heading__h1 {
-    font-size: $font-120;
+    font-size: $font-130;
     font-weight: bolder;
     font-family: 'Helvetica Neue';
 
@@ -104,7 +104,7 @@ ul {
 .container_wrapper {
     max-width: $container-width;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 
@@ -125,19 +125,28 @@ ul {
     border-color: transparent;
     font-weight: 700;
 
+    .arrow_svg {
+        transition: all 0.1s ease-in-out;
+    }
+
     &:hover {
         background-color: $dark-green;
         color: $white-color;
+
+        .arrow_svg {
+            transform: rotate(45deg);
+        }
     }
 
     &.btn_outline_white {
         background: transparent;
-        color: $white-color;
-        border-color: $white-color;
+        color: $eerie-black;
+        border-color: $soft-gray-blue;
 
         &:hover {
             background-color: $white-color;
-            color: $eerie-black;
+            color: $green-color;
+            border-color: $green-color;
         }
     }
 
@@ -145,6 +154,7 @@ ul {
         background: transparent;
         color: $eerie-black;
         border-color: $grayish-blue;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             background-color: $eerie-black;
@@ -196,7 +206,7 @@ button {
 
 .connect_horizontal_line {
     width: 20px;
-    height: 72px;
+    height: 60px;
 
     @include md {
         width: 12px !important;

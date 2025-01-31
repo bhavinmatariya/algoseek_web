@@ -2,8 +2,11 @@
 @import '../../../../../assets/styles/responsive';
 
 .algoseek__title {
+
+    margin-bottom: 4.8rem;
+
     h2 {
-        margin: 24px 0 16px 0;
+        margin: 16px 0 20px 0;
     }
 
     .algoseek_badge {
@@ -33,12 +36,13 @@
     }
 
     .packages {
+
         ul {
             li {
                 position: relative;
                 padding-left: 28px;
                 border-left: 1px dashed $green-color;
-                padding-bottom: $space-64;
+                padding-bottom: 4.8rem;
 
                 @include sm {
                     padding-bottom: $space-64 - 3;

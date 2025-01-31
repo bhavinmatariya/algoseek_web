@@ -1,90 +1,149 @@
 <!-- DATA OFFERING SECTION START -->
-<section class="algoseek_data_offering__wrapper space__sm">
+<section class="algoseek_data_offering__wrapper space__xs">
   <div class="container_wrapper">
-    <div class="algoseek__title margin_bottom text-center">
-      <h2 class="lh_11 mb-0">{{ dataOfferingData?.[0]?.title }}</h2>
-      <p class="body_font_md fw-light text_gray">
+    <div class="algoseek__title text-center">
+      <h2 class="lh_11 mb-0 font_helvetica font__sm fw-bold" data-aos="fade-up" data-aos-easing="ease-in-out"
+        data-aos-offset="200">{{ dataOfferingData?.[0]?.title }}</h2>
+      <p class="body_font_sm fw-normal text_gray lh_14" data-aos="fade-up" data-aos-easing="ease-in-out"
+        data-aos-offset="300">
         {{ dataOfferingData?.[0]?.description }}
       </p>
-      <h4 class="text_green lh-12">
+      <h4 class="text_green lh-13 body_font_md font_helvetica fw-medium mb-0" data-aos="fade-up"
+        data-aos-easing="ease-in-out" data-aos-offset="400">
         Available as Historical, Daily & Real-time
       </h4>
     </div>
 
     <div>
-      <div
-        class="algoseek_data d-flex align-items-start justify-content-center justify-content-sm-between flex-wrap flex-md-nowrap gap-4"
-      >
+      <div class="algoseek_data d-flex align-items-start justify-content-center flex-wrap flex-md-nowrap">
         <!-- MARKET DATA -->
         <div class="data_offering__wrapper">
-          <h4 class="text-center">Market data</h4>
-          @for (item of dataOfferingData?.[0]?.market_data; track $index) {
+          <h4 class="text-center body_font_md lh_12 fw-bold">Market data</h4>
+
           <div>
             <div class="border__grayish-blue rounded-8 p-4 text-center">
-              <div
-                class="d-flex align-items-center justify-content-center gap-4"
-              >
-                <div
-                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"
-                ></div>
-                <p class="body_font mb-0">
-                  {{ item.data_offering_icons_id.label }}
+              <div class="d-flex align-items-center justify-content-center gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="../../../../../assets/images/svgs/data-offering/market-data/1.svg" alt="">
+                </div>
+                <p class="body_font_sm mb-0 fw-normal lh_14">
+                  Equities
                 </p>
               </div>
             </div>
-            @if($index < dataOfferingData?.[0]?.market_data.length - 1) {
             <div class="connect_vertical_line"></div>
-            }
           </div>
-          }
+
+          <div>
+            <div class="border__grayish-blue rounded-8 p-4 text-center">
+              <div class="d-flex align-items-center justify-content-center gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="../../../../../assets/images/svgs/data-offering/market-data/2.svg" alt="">
+                </div>
+                <p class="body_font_sm mb-0 fw-normal lh_14">
+                  Equities
+                </p>
+              </div>
+            </div>
+            <div class="connect_vertical_line"></div>
+          </div>
+
+          <div>
+            <div class="border__grayish-blue rounded-8 p-4 text-center">
+              <div class="d-flex align-items-center justify-content-center gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="../../../../../assets/images/svgs/data-offering/market-data/3.svg" alt="">
+                </div>
+                <p class="body_font_sm mb-0 fw-normal lh_14">
+                  Equities
+                </p>
+              </div>
+            </div>
+            <div class="connect_vertical_line"></div>
+          </div>
+
+          <div>
+            <div class="border__grayish-blue rounded-8 p-4 text-center">
+              <div class="d-flex align-items-center justify-content-center gap-3">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="../../../../../assets/images/svgs/data-offering/market-data/5.svg" alt="">
+                </div>
+                <p class="body_font_sm mb-0 fw-normal lh_14">
+                  Equities
+                </p>
+              </div>
+            </div>
+            <div class="connect_vertical_line"></div>
+          </div>
+
+          <div>
+            <div class="border_top__grayish-blue rounded-8 p-4 text-center">
+              <span class="d-flex align-items-center justify-content-center">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2805_12804)">
+                        <path
+                            d="M12.3334 4C13.4379 4 14.3334 3.10457 14.3334 2C14.3334 0.89543 13.4379 0 12.3334 0C11.2288 0 10.3334 0.89543 10.3334 2C10.3334 3.10457 11.2288 4 12.3334 4Z"
+                            fill="#797C80" />
+                        <path
+                            d="M12.3334 14C13.4379 14 14.3334 13.1046 14.3334 12C14.3334 10.8954 13.4379 10 12.3334 10C11.2288 10 10.3334 10.8954 10.3334 12C10.3334 13.1046 11.2288 14 12.3334 14Z"
+                            fill="#797C80" />
+                        <path
+                            d="M12.3334 24C13.4379 24 14.3334 23.1046 14.3334 22C14.3334 20.8954 13.4379 20 12.3334 20C11.2288 20 10.3334 20.8954 10.3334 22C10.3334 23.1046 11.2288 24 12.3334 24Z"
+                            fill="#797C80" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2805_12804">
+                            <rect width="24" height="24" fill="white" transform="translate(0.333374)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </span>
+            </div>
+          </div>
         </div>
 
         <!-- CORE REFERENCE DATA -->
         <div class="data_offering__wrapper">
-          <h4 class="text-center">Core reference data</h4>
+          <h4 class="text-center body_font_md lh_12 fw-bold">Core reference data</h4>
           @for (item of dataOfferingData?.[0]?.core_reference_data; track $index) {
-            <div>
-                <div class="border__grayish-blue rounded-8 p-4 text-center">
-                  <div
-                    class="d-flex align-items-center justify-content-center gap-4"
-                  >
-                  <div
-                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"
-                ></div>
-                    <p class="body_font mb-0">{{item.data_offering_icons_id.label}}</p>
-                  </div>
-                </div>
-                @if($index < dataOfferingData?.[0]?.core_reference_data.length - 1) {
-                <div class="connect_vertical_line"></div>
-                }
-              </div>
-          }
-        </div>
-
-        <!-- EXTENDED REFERENCE DATA -->
-        <div class="data_offering__wrapper">
-          <h4 class="text-center">Extended reference data</h4>
-
-          @for (item of dataOfferingData?.[0]?.extended_reference_data; track $index) {
-            <div>
+          <div>
             <div class="border__grayish-blue rounded-8 p-4 text-center">
-              <div
-                class="d-flex align-items-center justify-content-center gap-4"
-              >
-                <div
-                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"
-                ></div>
-                <p class="body_font mb-0">{{item.data_offering_icons_id.label}}</p>
+              <div class="d-flex align-items-center justify-content-center gap-3">
+                <div class="icon d-flex align-items-center justify-content-center"
+                  [innerHTML]="item.data_offering_icons_id.svg | safeHtml"></div>
+                <p class="body_font_sm mb-0 fw-normal lh_14">{{item.data_offering_icons_id.label}}</p>
               </div>
             </div>
-            @if($index < dataOfferingData?.[0]?.extended_reference_data.length - 1) {
-            <div class="connect_vertical_line"></div>
-            }
+            @if($index < dataOfferingData?.[0]?.core_reference_data.length - 1) { <div class="connect_vertical_line">
           </div>
           }
         </div>
+        }
       </div>
+
+      <!-- EXTENDED REFERENCE DATA -->
+      <div class="data_offering__wrapper">
+        <h4 class="text-center body_font_md lh_12 fw-bold">Extended reference data</h4>
+
+        @for (item of dataOfferingData?.[0]?.extended_reference_data; track $index) {
+        <div>
+          <div class="border__grayish-blue rounded-8 p-4 text-center">
+            <div class="d-flex align-items-center justify-content-center gap-3">
+              <div class="icon d-flex align-items-center justify-content-center"
+                [innerHTML]="item.data_offering_icons_id.svg | safeHtml"></div>
+              <p class="body_font_sm mb-0 fw-normal lh_14">{{item.data_offering_icons_id.label}}</p>
+            </div>
+          </div>
+          @if($index < dataOfferingData?.[0]?.extended_reference_data.length - 1) { <div class="connect_vertical_line">
+        </div>
+        }
+      </div>
+      }
     </div>
+  </div>
+  </div>
   </div>
 </section>
 <!-- DATA OFFERING SECTION END -->

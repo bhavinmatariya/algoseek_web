@@ -1,16 +1,16 @@
 <!-- DATA ONBOARDING SECTION START -->
  @if (onboardingData.length > 0) {
-<div class="algoseek_data_onboarding space__sm">
+<div class="algoseek_data_onboarding space__xs">
   <div class="container_wrapper">
-    <div class="algoseek__title margin_bottom text-center">
-      <h4 class="text_green">{{ onboardingData[0]?.subtitle }}</h4>
-      <h2 class="lh_11 mb-0 mx-auto">{{ onboardingData[0]?.title }}</h2>
+    <div class="algoseek__title text-center">
+      <h4 class="text_green body_font_md fw-semibold lh_13 font_helvetica" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200">{{ onboardingData[0]?.subtitle }}</h4>
+      <h2 class="lh_11 font__sm font_helvetica mb-0 mx-auto fw-semibold" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="300">{{ onboardingData[0]?.title }}</h2>
     </div>
 
     <div>
       <div>
         <div
-          class="onboarding__wrapper margin_bottom d-flex align-items-center justify-content-center"
+          class="onboarding__wrapper d-flex align-items-center justify-content-center"
         >
           <div class="onboarding_tile flex-shrink-0 position-relative">
             <img
@@ -31,7 +31,7 @@
                   class="d-block h-100 w-100"
                 />
               </div>
-              <h6 class="text-center">{{ onboardingCardsData[0].name }}</h6>
+              <h6 class="text-center body_font_sm lh_14 fw-bold">{{ onboardingCardsData[0].name }}</h6>
             </div>
           </div>
 
@@ -54,7 +54,7 @@
                   class="d-block h-100 w-100"
                 />
               </div>
-              <h6 class="text-center">{{ onboardingCardsData[1].name }}</h6>
+              <h6 class="text-center body_font_sm lh_14 fw-bold">{{ onboardingCardsData[1].name }}</h6>
             </div>
           </div>
 
@@ -77,7 +77,7 @@
                   class="d-block h-100 w-100"
                 />
               </div>
-              <h6 class="text-center">{{ onboardingCardsData[2].name }}</h6>
+              <h6 class="text-center body_font_sm lh_14 fw-bold">{{ onboardingCardsData[2].name }}</h6>
             </div>
           </div>
           <div
@@ -102,11 +102,11 @@
                     class="d-block h-100 w-100"
                   />
                 </div>
-                <h6 class="text-center">{{ onboardingCardsData[3].name }}</h6>
+                <h6 class="text-center body_font_sm lh_14 fw-bold">{{ onboardingCardsData[3].name }}</h6>
               </div>
             </div>
             <div class="onboarding_tile flex-shrink-0">
-              <div class="onboarding_data__wrap position-relative z-2">
+              <div class="onboarding_data__wrap position-relative z-2 space_n_left">
                 <div class="icons mx-auto">
                   <img
                     src="{{ baseURL }}/assets/{{ _dataOnboardingBGIcons[4] }}"
@@ -114,7 +114,7 @@
                     class="d-block h-100 w-100"
                   />
                 </div>
-                <h6 class="text-center text-white">
+                <h6 class="text-center body_font_sm lh_14 fw-bold text-white">
                   {{ onboardingCardsData[4].name }}
                 </h6>
               </div>
@@ -122,23 +122,20 @@
           </div>
         </div>
         <div class="onboarding_detail">
-          <p class="body_font text_gray mx-auto text-center w-full">
+          <p class="body_font_sm lh_14 fw-normal text_gray mx-auto text-center w-full">
             {{ onboardingData[0].description }}
           </p>
 
           <button class="btn_pill btn_outline_gray mx-auto">
             Learn more
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              fill="currentColor"
-            >
-              <path
-                d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"
-              ></path>
-            </svg>
+            <span class="d-flex align-items-center justify-content-center arrow_svg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  fill="currentColor">
+                  <path
+                      d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                  </path>
+              </svg>
+          </span>
           </button>
         </div>
       </div>

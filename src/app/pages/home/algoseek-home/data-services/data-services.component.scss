@@ -1,9 +1,12 @@
+@import '../../../../../assets/styles/variables';
 @import '../../../../../assets/styles/responsive';
 
 .algoseek__title {
     h4 {
         margin-bottom: 16px;
     }
+
+    margin-bottom: $space-60;
 }
 
 .img_ratio_padding {
@@ -23,3 +26,110 @@
         padding-top: 55.4%;
     }
 }
+
+// PARTNERS SECTION START
+
+.algoseek_title__wrapper {
+    margin-bottom: 48px;
+
+    h3 {
+        font-size: 3.2rem;
+    }
+}
+
+.algoseek_slider__wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel_image__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 142px;
+    width: 100%;
+
+    img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.navigate_button__wrapper {
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px !important;
+    z-index: 1;
+}
+
+.navigation__button {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 1px solid $darker-gray;
+    background-color: transparent;
+    color: $darker-gray;
+    transition: all 0.3s ease-in-out;
+
+    @include sm {
+        height: 36px;
+        width: 36px;
+    }
+
+    &:hover {
+        color: $white-color;
+        background-color: #050505;
+        border-color: #050505;
+    }
+}
+
+:host ::ng-deep {
+    .owl-carousel .owl-item {
+        min-height: 60px;
+        margin-right: 40px;
+        min-width: 148px;
+        max-width: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    // .owl-theme .owl-nav.disabled + .owl-dots {
+    //     margin-top: 0 !important;
+    // }
+
+    .owl-carousel .owl-stage-outer {
+        margin-bottom: 16px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        height: 6px !important;
+        width: 6px !important;
+        outline: 1px solid transparent !important;
+        outline-offset: 5px !important;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        margin-bottom: 8px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        outline: 1px solid #050505 !important;
+        outline-offset: 5px !important;
+        background-color: #050505 !important;
+    }
+}
+
+// PARTNERS SECTION END

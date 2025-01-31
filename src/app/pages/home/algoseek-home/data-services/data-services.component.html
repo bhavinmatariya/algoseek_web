@@ -1,30 +1,70 @@
 <!-- DATA AND SERVICES SECTION START -->
- <section class="algoseek_data_services__wrapper bg_eerie_black space__sm position-relative">
-    <div class="position-absolute top-0 start-0">
-        <img src="../../../../../assets/images/bg/home-page/gradient_up.png" alt="gradient" class="h-100 w-100">
-    </div>
-    <div class="position-absolute bottom-0 end-0">
-        <img src="../../../../../assets/images/bg/home-page/gradient_down.png" alt="gradient" class="h-100 w-100">
-    </div>
+<section class="algoseek_data_services__wrapper bg_light_grayscale space__xs position-relative">
     <div class="container_wrapper">
-        <div class="algoseek__title margin_bottom text-center">
-            <h4 class="text_green lh-12">{{ dataServicesContent?.subtitle }}</h4>
-            <h2 class="text-white lh_11 mb-0" [innerHTML]="dataServicesContent?.title"></h2>
+        <div class="algoseek__title text-center">
+            <h4 class="text_green lh-13 body_font_md font_helvetica fw-bold" data-aos="fade-up"
+                data-aos-easing="ease-in-out" data-aos-offset="200">{{ dataServicesContent?.subtitle }}</h4>
+            <h2 class="lh_11 mb-0 text_eerie_black font__sm font_helvetica fw-semibold"
+                [innerHTML]="dataServicesContent?.title" data-aos="fade-up" data-aos-easing="ease-in-out"
+                data-aos-offset="300"></h2>
         </div>
 
         <div>
             <div class="row gy-4">
 
                 @for(item of dataServicesContent?.images; track item; let i = $index){
-                    <div class="col-12 col-sm-6 col-md-3">
-                        <div class="position-relative img_ratio_padding">
-                            <img src="{{baseURL}}/assets/{{item.use_cases_images_id.image}}" alt="data and Services" class="algoseek_img_ratio d-none d-sm-block">
-                            <img src="../../../../../assets/images/images/data-and-services/{{imageMObile[i]}}" alt="data and Services" class="algoseek_img_ratio d-block d-sm-none">
-                        </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="position-relative img_ratio_padding">
+                        <img src="{{baseURL}}/assets/{{item.use_cases_images_id.image}}" alt="data and Services"
+                            class="algoseek_img_ratio d-none d-sm-block">
+                        <img src="../../../../../assets/images/images/data-and-services/{{imageMObile[i]}}"
+                            alt="data and Services" class="algoseek_img_ratio d-block d-sm-none">
                     </div>
+                </div>
                 }
             </div>
         </div>
     </div>
- </section>
+</section>
 <!-- DATA AND SERVICES SECTION END -->
+
+<!-- PARTNERS SECTION START -->
+<section class="algoseek_partners__wrapper bg_light_gray space__xs">
+    <div class="container_wrapper text-center">
+        <div class="algoseek_title__wrapper">
+            <h3 class="lh_12 mb-4 font_proxima_nova_bold" data-aos="fade-up" data-aos-easing="ease-in-out"
+                data-aos-offset="200">Trusted by</h3>
+            <p class="body_font_sm fw-normal lh_14" data-aos="fade-up" data-aos-easing="ease-in-out"
+                data-aos-offset="300">Our data, technology and services are the go-to for many firms including:</p>
+        </div>
+
+        <div class="algoseek_slider__wrapper">
+            <div class="carousel position-relative">
+                <owl-carousel-o [options]="customOptions" #carousel>
+
+                    @for (slide of partnersData; track $index) {
+                    <ng-container>
+                        <ng-template carouselSlide>
+                            <div class="carousel_image__wrapper">
+                                <img [src]="baseUrl + '/assets/' + slide.partner_logo" class="h-100 w-100">
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                    }
+
+                </owl-carousel-o>
+
+                <div class="position-absolute navigate_button__wrapper">
+                    <button class="navigation__button" (click)="carousel.prev()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+                    </button>
+
+                    <button class="navigation__button" (click)="carousel.next()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PARTNERS SECTION END -->

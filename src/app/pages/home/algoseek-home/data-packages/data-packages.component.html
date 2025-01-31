@@ -1,12 +1,12 @@
 <!-- DATA PACKAGES SECTION START -->
-<section class="algoseek_data_packages__wrapper space__sm">
+<section class="algoseek_data_packages__wrapper space__xs">
     <div class="container_wrapper">
-        <div class="algoseek__title margin_bottom text-center">
-            <div class="algoseek_badge bg_light_red d-inline-block rounded-pill">
-                <span class="text_red body_font fw-semibold">New</span>
+        <div class="algoseek__title text-center">
+            <div class="algoseek_badge bg_light_red d-inline-block rounded-pill" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="250">
+                <span class="text_red body_font_sm fw-bold">New</span>
             </div>
-            <h2 class="lh_11">{{ packagesData[0]?.title }}</h2>
-            <p class="body_font fw-light text_gray">
+            <h2 class="lh_11 font_helvetica font__sm fw-bold" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="200">{{ packagesData[0]?.title }}</h2>
+            <p class="body_font_sm fw-normal text_gray lh_14" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-offset="300">
                 {{ packagesData[0]?.description }}
             </p>
         </div>
@@ -21,22 +21,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="packages">
-                        <ul>
-
-                            @for (item of packagesItems; track $index) {
-                            <li>
-                                <h4>{{ item.name }}</h4>
-                                <p class="body_font fw-light text_gray lh_13">
-                                    {{ item.description }}
-                                </p>
-                            </li>
-                            }
-                           
-                        </ul>
-
-                        <div class="ms-5">
-                            <button class="btn_pill">View Package Options</button>
+                    <div class="h-100 d-flex align-items-center justify-content-center flex-column">
+                        <div class="packages">
+                            <ul>
+                                @for (item of packagesItems; track $index) {
+                                <li>
+                                    <h4 class="body_font fw-bold lh_11">{{ item.name }}</h4>
+                                    <p class="body_font_sm mb-0 fw-light text_gray lh_14">
+                                        {{ item.description }}
+                                    </p>
+                                </li>
+                                }
+                               
+                            </ul>
+    
+                            <div class="ms-sm-5">
+                                <button class="btn_pill body_font_md">View Package Options</button>
+                            </div>
                         </div>
                     </div>
                 </div>

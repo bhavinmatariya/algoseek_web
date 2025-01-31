@@ -3,21 +3,22 @@
   <div class="container_wrapper">
     <div class="hero_content position-absolute top-50 start-50 translate-middle w-100">
       <div class="hero_title">
-        <p class="sub_header__font hero_sub__header text_eerie_black fw-semibold text-center">
-          <span class="d-block">
-            <span class="position-relative">
-              <div class="sub_title_animation animate_wrapper">
-                <div class="word_swap">{{ displayedTitle || '' }}</div>
-              </div>
-            </span>
-          </span>
-        </p>
+        <div class="sub_header__font hero_sub__header text_eerie_black fw-semibold text-center d-block">
+          <div class="sub_title_animation animate_wrapper position-relative">
+            <!-- <p class="word_swap body_font">Trading is exciting, data is grinding</p>
+            <p class="word_swap body_font">Math is neat, data is messy</p>
+            <p class="word_swap body_font">Code is breezy, data is stuffy</p> -->
+
+            <div class="word_swap" *ngIf="currentSentence">{{ currentSentence }}</div>
+          </div>
+        </div>
         <h1 class="text-center">
-          <span class="main_header_text d-block text-start mx-auto position-relative">Enjoy
-            <span class="animate_wrapper">
-              <span class="word_swap d-inline-block position-absolute">{{
-                subtitleSuffix
-                }}</span>
+          <span class="main_header_text text-start d-flex align-items-center justify-content-center gap-4 mx-auto">Enjoy
+            <span class="animate_wrapper position-relative">
+              <!-- <span class="word_swap">Trading</span>
+              <span class="word_swap">Math</span>
+              <span class="word_swap">Coding</span> -->
+              <span class="word_swap">{{ currentWord }}</span>
             </span>
           </span>
           <span class="d-inline-block">
@@ -25,8 +26,8 @@
             <span class="text_green">algoseek.</span>
           </span>
         </h1>
-        <p class="text_gray sub_header__font fw-semibold text-center mb-0">
-          {{ heroContentData[0].description }}
+        <p class="text_gray sub_header__font fw-medium text-center mb-0">
+          Financial data, technology and services.
         </p>
       </div>
     </div>

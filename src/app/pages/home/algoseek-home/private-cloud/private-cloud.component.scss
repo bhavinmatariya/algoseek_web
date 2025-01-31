@@ -1,0 +1,86 @@
+@import '../../../../../assets/styles/variables';
+@import '../../../../../assets/styles/responsive';
+
+.logo_small {
+    height: 65px;
+    width: 70px;
+
+    @include sm {
+        height: 52px;
+        width: 56px;
+    }
+}
+
+.algoseek_database__wrapper {
+    background: #FAFBFB;
+
+    h2 {
+        margin-bottom: 16px;
+
+        span {
+            line-height: 1;
+        }
+    }
+
+    h3 {
+        margin-bottom: 36px;
+
+        @include sm {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.algoseek_database {
+    gap: 140px;
+
+    @include xl {
+        gap: $space-80 - 2;
+    }
+}
+
+.algoseek_database_quants {
+    gap: 20px;
+
+    h4 {
+        margin-bottom: 12px;
+    }
+}
+
+// PRIVATE CLOUD SECTION START
+
+.algoseek_heading__wrapper {
+    p {
+        margin-bottom: 16px;
+    }
+}
+
+.cloud_details__wrapper {
+    padding: 40px;
+    max-width: 830px;
+    margin-left: auto;
+
+    @include lg {
+        padding: 26px;
+    }
+
+    @include sm {
+        padding: 20px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+
+        @include lg {
+            margin-bottom: 16px;
+        }
+    }
+
+    .icon {
+        margin-bottom: 24px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+// PRIVATE CLOUD SECTION END

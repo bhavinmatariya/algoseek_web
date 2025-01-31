@@ -1,49 +1,20 @@
 <!-- STATUS SECTION START -->
-<section class="algoseek_status__wrapper space">
+<section class="algoseek_status__wrapper bg_eerie_black">
     <div class="container_wrapper">
-        <div class="sub_header__wrapper mx-auto margin_bottom">
+        <!-- <div class="sub_header__wrapper mx-auto margin_bottom">
             <h4 class="text-center text_white fw-semibold">Since our inception in 2015, we’ve been fusing advanced
                 technology and financial data know-how to empower our clients worldwide to achieve business success.
             </h4>
-        </div>
+        </div> -->
         <div class="status_counter mx-auto d-flex align-items-center justify-content-between">
             @for (data of statusData; track $index) {
             <div class="status">
-                <h6 class="text_green position-relative fw-semibold text-center"> {{data.description}} </h6>
-                <p class="algoseek_heading__h2 lh_12 fw-bold numbers text-white mb-0 text-center"> {{data.number}} </p>
-                <p class="body_font_md text-white fw-medium text-uppercase text-center mb-0"> {{data.title}} </p>
+                <h6 class="text_green position-relative fw-normal body_font_sm text-center lh_14"> {{data.description}} </h6>
+                <p class="font__md lh_11 fw-semibold numbers text-white mb-0 text-center"> {{data.number}} </p>
+                <p class="body_font fw-medium text-capitalize text-center mb-0 lh_14 text_grayscale"> {{data.title}} </p>
             </div>
             }
         </div>
     </div>
 </section>
 <!-- STATUS SECTION END -->
-
-<!-- PARTNERS SECTION START -->
-<section class="algoseek_partners__wrapper bg_light_gray space__sm">
-    <div class="container_wrapper text-center">
-        <div class="algoseek_title__wrapper">
-            <h3 class="lh_12 mb-4">Trusted by</h3>
-            <p class="body_font fw-light">Our data, technology and services are the go-to for many firms including:</p>
-        </div>
-
-        <div class="algoseek_slider__wrapper">
-            <div class="carousel">
-                <owl-carousel-o [options]="customOptions">
-
-                    @for (slide of partnersData; track $index) {
-                    <ng-container>
-                        <ng-template carouselSlide>
-                            <div class="carousel_image__wrapper">
-                                <img [src]="baseUrl + '/assets/' + slide.partner_logo" class="h-100 w-100">
-                            </div>
-                        </ng-template>
-                    </ng-container>
-                    }
-
-                </owl-carousel-o>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- PARTNERS SECTION END -->

@@ -1,9 +1,11 @@
+@import '../../../../../assets/styles/variables';
 @import '../../../../../assets/styles/responsive';
+
 
 .algoseek_realtime__wrapper {
     .algoseek_title__wrapper {
         h2 {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
 
             @include md {
                 margin-bottom: 10px;
@@ -16,45 +18,73 @@
     }
 
     .algoseek_data__wrapper {
+        padding: $space-60 0;
 
         .algoseek_data {
+            gap: 48px;
+
+            @include md {
+                gap: 8px;
+            }
+
             @include sm {
-                row-gap: 40px !important;
+                row-gap: 40px;
             }
         }
 
         .realtime_data__wrapper {
-            max-width: 353px;
+            max-width: 366px;
             width: 100%;
 
             &.algoseek_flexible_access {
-                max-width: 494px;
-                width: 100%;
-
-                .flexiable_access_data {
-                    height: 72px;
-
-                    @include lg {
-                        height: 50px;
+                .flexible__access {
+                    &:last-child {
+                        border-width: 1px 0 0 0 !important;
                     }
                 }
+            }
 
-                .connection__wrapper {
-                    gap: 20px;
+            .tech_data,
+            .flexible__access {
+                padding: 18px 20px !important;
 
-                    @include sm {
-                        gap: 14px;
-                    }
+                @include sm {
+                    padding: 12px 20px !important;
                 }
             }
 
             h4 {
                 margin-bottom: 24px;
+
+                @include xs {
+                    margin-bottom: 18px;
+                }
             }
 
             @include lg {
                 max-width: 250px;
             }
+
+            @include xs {
+                max-width: none;
+            }
+        }
+    }
+}
+
+.h-76 {
+    height: 76.5px;
+}
+
+.bottom__row {
+    gap: 24px;
+
+    @include sm {
+        gap: 10px;
+    }
+    .btn_pill {
+        @include sm {
+            width: 100%;
         }
     }
 }

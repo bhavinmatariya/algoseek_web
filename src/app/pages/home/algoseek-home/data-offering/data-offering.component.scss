@@ -1,21 +1,31 @@
+@import '../../../../../assets/styles/variables';
 @import '../../../../../assets/styles/responsive';
 
 .algoseek__title {
+
+    margin-bottom: $space-60;
     p {
-        margin: 24px auto;
+        margin: 20px auto;
         max-width: 950px;
         width: 100%;
     }
 }
 
 .algoseek_data {
-    @include md {
+
+    gap: 32px;
+
+    @include lg {
+        gap: 16px !important;
+    }
+
+    @include sm {
         row-gap: 40px !important;
     }
 }
 
 .data_offering__wrapper {
-    max-width: 426px;
+    max-width: 374px;
     width: 100%;
 
     h4 {
@@ -29,6 +39,11 @@
         @include sm {
             margin-bottom: 12px;
         }
+    }
+
+    .icon {
+        height: 26px;
+        width: 26px;
     }
 
     @include md {

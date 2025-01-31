@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -11,7 +11,12 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
   isMobileMenuexpand: boolean = false;
+  isScrolled = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 100;
+  }
   onMobileMenuexpand() {
     this.isMobileMenuexpand = !this.isMobileMenuexpand;
   }
